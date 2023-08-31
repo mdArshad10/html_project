@@ -30,6 +30,7 @@ nav {
     text-transform: uppercase;
     font-weight: 400;
     color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -41,7 +42,38 @@ video {
   z-index: -1;
 }
 
-#main {
+#main{
   position: relative;
-  background-color: rgba(0, 0, 0, 0.39);
+  background-color: rgba(0, 0, 0, 0.243);
+
+  > #page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;;
+
+    > h1{
+        font-size: 7vw;
+        /* mix-blend-mode: difference; */
+        position: relative;
+
+        &::before{
+            content: "EAT. DRINK. PLAY.";
+            position: absolute;
+            color: red;
+            left: -2px;
+            top: -2px;
+            /* z-index: -100; */
+        }
+    }
+
+    > p{
+        width: 60%;
+    }
+  }
 }
+
+
