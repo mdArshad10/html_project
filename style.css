@@ -12,7 +12,7 @@ body {
 
 nav {
   position: fixed;
-  height: 120px;
+  height: 140px;
   width: 100%;
   /* background-color: red; */
   display: flex;
@@ -20,6 +20,8 @@ nav {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  color: white;
+  z-index: 100;
 
   > img {
     width: 80px;
@@ -29,9 +31,18 @@ nav {
 > h4 {
     text-transform: uppercase;
     font-weight: 400;
-    color: #fff;
+    /* color: #fff; */
     cursor: pointer;
   }
+}
+
+/* styling the mouse pointer */
+#mouseCursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: royalblue;
+  position: absolute;
 }
 
 video {
@@ -54,6 +65,8 @@ video {
     justify-content: center;
     flex-direction: column;
     color: #fff;;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.243);
 
     > h1{
         font-size: 7vw;
@@ -64,15 +77,27 @@ video {
             content: "EAT. DRINK. PLAY.";
             position: absolute;
             color: red;
-            left: -2px;
+            right: -2px;
             top: -2px;
-            /* z-index: -100; */
+            z-index: -1;
         }
+    }
+
+    > h2{
+      font-size: 36px;
     }
 
     > p{
         width: 60%;
+        font-size: 16px;
+        font-weight: 300;
     }
+  }
+
+  > #page2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.887);
   }
 }
 
